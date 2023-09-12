@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "dgSpecHash": "21kCyFBySJjSkC3YGn8U4dYJe3fosAhgo+naCh1nnCmroNCkNOR4jmeP+ci16rWXCDGLMjDqjTuUprg2ZmKECw==",
+  "success": true,
+  "projectFilePath": "E:\\DMACC\\Adv C#\\CIS174-12428-Adv-CSharp\\Mod1-1\\FirstResponsiveWebAppStewart.test\\FirstResponsiveWebAppStewart.test.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Trevor\\.nuget\\packages\\coverlet.collector\\3.2.0\\coverlet.collector.3.2.0.nupkg.sha512",
+    "C:\\Users\\Trevor\\.nuget\\packages\\microsoft.codecoverage\\17.5.0\\microsoft.codecoverage.17.5.0.nupkg.sha512",
+    "C:\\Users\\Trevor\\.nuget\\packages\\microsoft.net.test.sdk\\17.5.0\\microsoft.net.test.sdk.17.5.0.nupkg.sha512",
+    "C:\\Users\\Trevor\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Trevor\\.nuget\\packages\\microsoft.testplatform.objectmodel\\17.5.0\\microsoft.testplatform.objectmodel.17.5.0.nupkg.sha512",
+    "C:\\Users\\Trevor\\.nuget\\packages\\microsoft.testplatform.testhost\\17.5.0\\microsoft.testplatform.testhost.17.5.0.nupkg.sha512",
+    "C:\\Users\\Trevor\\.nuget\\packages\\netstandard.library\\2.0.0\\netstandard.library.2.0.0.nupkg.sha512",
+    "C:\\Users\\Trevor\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\Trevor\\.nuget\\packages\\nuget.frameworks\\5.11.0\\nuget.frameworks.5.11.0.nupkg.sha512",
+    "C:\\Users\\Trevor\\.nuget\\packages\\nunit\\3.13.3\\nunit.3.13.3.nupkg.sha512",
+    "C:\\Users\\Trevor\\.nuget\\packages\\nunit.analyzers\\3.6.1\\nunit.analyzers.3.6.1.nupkg.sha512",
+    "C:\\Users\\Trevor\\.nuget\\packages\\nunit3testadapter\\4.4.2\\nunit3testadapter.4.4.2.nupkg.sha512",
+    "C:\\Users\\Trevor\\.nuget\\packages\\system.reflection.metadata\\1.6.0\\system.reflection.metadata.1.6.0.nupkg.sha512"
+  ],
+  "logs": []
+}

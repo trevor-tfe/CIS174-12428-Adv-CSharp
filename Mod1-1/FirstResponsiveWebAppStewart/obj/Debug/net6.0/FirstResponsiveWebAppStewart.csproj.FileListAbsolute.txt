@@ -29,3 +29,4 @@ E:\DMACC\Adv C#\CIS174-12428-Adv-CSharp\Mod1-1\FirstResponsiveWebAppStewart\obj\
 E:\DMACC\Adv C#\CIS174-12428-Adv-CSharp\Mod1-1\FirstResponsiveWebAppStewart\obj\Debug\net6.0\FirstResponsiveWebAppStewart.pdb
 E:\DMACC\Adv C#\CIS174-12428-Adv-CSharp\Mod1-1\FirstResponsiveWebAppStewart\obj\Debug\net6.0\FirstResponsiveWebAppStewart.genruntimeconfig.cache
 E:\DMACC\Adv C#\CIS174-12428-Adv-CSharp\Mod1-1\FirstResponsiveWebAppStewart\obj\Debug\net6.0\ref\FirstResponsiveWebAppStewart.dll
+E:\DMACC\Adv C#\CIS174-12428-Adv-CSharp\Mod1-1\FirstResponsiveWebAppStewart\bin\Debug\net6.0\.filenesting.json

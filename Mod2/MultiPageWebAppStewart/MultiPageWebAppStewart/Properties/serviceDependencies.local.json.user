@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "restored": true,
+      "restoreTime": "2023-09-08T00:17:34.4783156Z"
+    },
+    "secrets1": {
+      "restored": true,
+      "restoreTime": "2023-09-04T03:47:30.4529421Z"
+    }
+  },
+  "parameters": {
+    "mssql1.subscriptionId": {
+      "Name": "mssql1.subscriptionId",
+      "Type": "subscription",
+      "Value": "353f3cf7-f1cc-48c8-9b63-8858e1d01c73"
+    },
+    "mssql1.resourceGroupName": {
+      "Name": "mssql1.resourceGroupName",
+      "Type": "resourceGroup",
+      "Value": "cis174tastewart2"
+    }
+  }
+}

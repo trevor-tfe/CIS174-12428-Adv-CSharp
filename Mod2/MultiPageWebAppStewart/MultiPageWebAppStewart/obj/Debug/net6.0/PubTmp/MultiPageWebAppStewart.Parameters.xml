@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="cis176tastewart" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^E:\\DMACC\\Adv\ C\#\\CIS174-12428-Adv-CSharp\\Mod2\\MultiPageWebAppStewart\\MultiPageWebAppStewart\\obj\\Debug\\net6\.0\\PubTmp\\Out\\$" />
+  </parameter>
+</parameters>

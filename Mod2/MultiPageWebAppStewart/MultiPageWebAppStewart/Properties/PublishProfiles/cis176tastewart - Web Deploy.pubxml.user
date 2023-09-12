@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAR+/QnMP1JkK1alGa/8mrJAAAAAACAAAAAAAQZgAAAAEAACAAAACJKCE8LbRRVSUyoe5pBcLD6HvzWsYKXBKYTQO1KT1gSAAAAAAOgAAAAAIAACAAAAApa5xbc8ob6BHRhAqYl3nEgxaAYJM6kPMNN1PuepNeQoAAAABvEt0PSkkQP8E4LaiUJDIZlqBDVpGkEjg12jzaMylbVulK4lPse6LFFy7l8OrGgznRBSVzdfx5tbDqCMh5xWaweph+0xesM+LbBpziyIOCXT39wRkicVAHkXuxER4VFeb8LkS55Gi7wjEZPb77YflYsxdCNycicgPfHtJlu7PdYkAAAABdc+mEYZLGS0xuS6dj9W8FA5ZgAwJ6103L6ncdOjzXv4/GZCQdw/O+EEO0BVwbQq0bJY+6VhN/ujRcCXj9rynd</EncryptedPassword>
+    <History>True|2023-09-08T00:51:50.7382300Z;True|2023-09-07T19:38:22.1494144-05:00;True|2023-09-07T18:56:23.7296003-05:00;True|2023-09-07T18:55:29.9736761-05:00;True|2023-09-07T18:18:12.8225584-05:00;False|2023-09-07T18:16:44.8282487-05:00;True|2023-09-05T10:42:19.3352596-05:00;True|2023-09-03T22:49:24.3665361-05:00;False|2023-09-03T22:48:22.0845216-05:00;False|2023-09-03T22:32:35.9410386-05:00;False|2023-09-03T22:30:12.5182053-05:00;True|2023-09-03T22:28:52.1618329-05:00;True|2023-09-03T22:28:08.6348632-05:00;True|2023-09-03T22:18:03.7376082-05:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="cis174tastewart2SQL">
+      <Value>Data Source=tcp:cis174tastewart2.database.windows.net,1433%3bInitial Catalog=cis174tastewart2SQL%3bUser Id=tastewart2%40cis174tastewart2%3bPassword=cis174Candy!</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>
