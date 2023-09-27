@@ -16,12 +16,24 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = E:\DMACC\Adv C#\CIS174-12428-Adv-CSharp\Mod2\EFCoreWebAppStewart\EFCoreWebAppStewart
 build_property._RazorSourceGeneratorDebug = 
 
+[E:/DMACC/Adv C\#/CIS174-12428-Adv-CSharp/Mod2/EFCoreWebAppStewart/EFCoreWebAppStewart/Areas/Admin/Views/Home/Admin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxBZG1pbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/DMACC/Adv C\#/CIS174-12428-Adv-CSharp/Mod2/EFCoreWebAppStewart/EFCoreWebAppStewart/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/DMACC/Adv C\#/CIS174-12428-Adv-CSharp/Mod2/EFCoreWebAppStewart/EFCoreWebAppStewart/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DMACC/Adv C\#/CIS174-12428-Adv-CSharp/Mod2/EFCoreWebAppStewart/EFCoreWebAppStewart/Views/Home/Random.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSYW5kb20uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DMACC/Adv C\#/CIS174-12428-Adv-CSharp/Mod2/EFCoreWebAppStewart/EFCoreWebAppStewart/Views/Home/User.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxVc2VyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/DMACC/Adv C\#/CIS174-12428-Adv-CSharp/Mod2/EFCoreWebAppStewart/EFCoreWebAppStewart/Views/Movie/Delete.cshtml]

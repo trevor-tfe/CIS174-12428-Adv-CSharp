@@ -25,6 +25,17 @@ namespace EFCoreWebAppStewart.Controllers
             return View();
         }
 
+        public IActionResult User()
+        {
+            return View();
+        }
+
+        [Route("Home/Capybara")]
+        public IActionResult Random(int num = 1)
+        {
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
@@ -32,3 +43,4 @@ namespace EFCoreWebAppStewart.Controllers
         }
     }
 }
+

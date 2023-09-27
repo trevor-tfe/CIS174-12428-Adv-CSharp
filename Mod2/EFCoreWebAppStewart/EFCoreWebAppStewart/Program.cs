@@ -3,6 +3,9 @@ using EFCoreWebAppStewart.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
+//Add services to the container.
+builder.Services.AddControllersWithViews();
+
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
@@ -34,8 +37,26 @@ app.UseRouting();
 
 app.UseAuthorization();
 
-app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+app.UseEndpoints(endpoints =>
+{
+    app.MapAreaControllerRoute(
+        name: "admin",
+        areaName: "Admin",
+        pattern: "Admin/{controller=Home}/{action=Admin}/{id?}");
+
+    app.MapControllerRoute(
+        name: "default",
+        pattern: "{controller=Home}/{action=Index}/{id?}");
+
+    app.MapControllerRoute(
+        name: "user",
+        pattern: "{controller=Home}/{action=User}/{id?}");
+
+    app.MapControllerRoute(
+        name: "paging",
+        pattern: "{controller=Home}/{action=Random}/{id?}/page{num}");
+
+});
+
 
 app.Run();
