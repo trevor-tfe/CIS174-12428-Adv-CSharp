@@ -1,0 +1,51 @@
+﻿@model List<Student>
+
+@{
+    ViewData["Title"] = "Students";
+    var routeUrl = Url.RouteUrl(ViewContext.RouteData.Values);
+    var routeChar = routeUrl[routeUrl.Length - 1];
+    var routeInt = Int32.Parse(routeChar.ToString());
+}
+
+<div>
+    @if(routeInt <= 2){
+        <p>You do not have authorization to view this page</p>
+    } else if (routeInt > 2 && routeInt < 8) {
+        <table>
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach(var student in Model){
+                <tr>
+                    <th>@student.FirstName</th>
+                    <th>@student.LastName</th>
+                </tr>
+                }
+            </tbody>
+        </table>
+    } else if (routeInt > 8){
+        <h3>Hello Admin</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Grade</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach(var student in Model){
+                <tr>
+                    <th>@student.FirstName</th>
+                    <th>@student.LastName</th>
+                    <th>@student.Grade</th>
+                </tr>
+                }
+            </tbody>
+        </table>
+    }
+</div>
