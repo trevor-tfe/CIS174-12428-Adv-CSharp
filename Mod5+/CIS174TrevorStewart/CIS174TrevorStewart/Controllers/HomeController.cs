@@ -26,6 +26,10 @@ namespace CIS174TrevorStewart.Controllers
         {
             return View();
         }
+        public IActionResult Olympics()
+        {
+            return View();
+        }
         public IActionResult SixOne()
         {
             var students = context.Students.ToList();
