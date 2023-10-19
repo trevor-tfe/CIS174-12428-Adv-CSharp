@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
 using System.Diagnostics;
 using Microsoft.EntityFrameworkCore;
+using System.Security.Cryptography.X509Certificates;
 
 namespace CIS174TrevorStewart.Models
 {
@@ -12,201 +13,230 @@ namespace CIS174TrevorStewart.Models
         { }
         public DbSet<Country> Countries { get; set; } = null!;
 
-      protected override void OnModelCreating(ModelBuilder modelBuilder)
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
 
-            /*            modelBuilder.Entity<Sport>().HasData(
-                          new Sport 
-                          {
-                              Name = "Curling",
-                              Category = "Winter Olympics",
-                              Type = "Indoor"
-                          },
-                          new Sport
-                          {
-                              Name = "Bobsleigh",
-                              Category = "Winter Olympics",
-                              Type = "Outdoor"
-                          },
-                          new Sport
-                          {
-                              Name = "Diving",
-                              Category = "Summer Olympics",
-                              Type = "Indoor"
-                          },
-                          new Sport
-                          {
-                              Name = "Road Cycling",
-                              Category = "Summer Olympics",
-                              Type = "Outdoor"
-                          },
-                          new Sport
-                          {
-                              Name = "Archery",
-                              Category = "Paralympics",
-                              Type = "Indoor"
-                          },
-                          new Sport
-                          {
-                              Name = "Canoe Sprint",
-                              Category = "Paralympics",
-                              Type = "Outdoor"
-                          },
-                          new Sport
-                          {
-                              Name = "Breakdancing",
-                              Category = "Youth Olympic Games",
-                              Type = "Indoor"
-                          },
-                          new Sport
-                          {
-                              Name = "Skateboarding",
-                              Category = "Youth Olympic Games",
-                              Type = "Outdoor"
-                          });
-           */
-
-            modelBuilder.Entity<Country>().HasData(
-                new Country
+            modelBuilder.Entity<Sport>().HasData(
+                new
                 {
-                    Name = "Canada",
-                    Flag = "Images/canada.jpg",
-                    Sport = new Sport("Curling", "Winter Olympics", "Indoor")
+                    SportName = "Curling", 
+                    Category = "Winter Olympics", 
+                    Type = "Indoor"
+                }, 
+                new
+                {
+                    SportName = "Bobsleigh",
+                    Category = "Winter Olympics",
+                    Type = "Outdoor"
                 },
-                new Country
+                new
                 {
-                    Name = "Sweden",
-                    Flag = "Images/sweden.jpg",
-                    Sport = new Sport("Curling", "Winter Olympics", "Indoor")
+                    SportName = "Diving",
+                    Category = "Summer Olympics",
+                    Type = "Indoor"
+                }, 
+                new
+                {
+                    SportName = "Road Cycling",
+                    Category = "Summer Olympics",
+                    Type = "Outdoor"
                 },
-                new Country
+                new
                 {
-                    Name = "Great Britain",
-                    Flag = "Images/great_britain.jpg",
-                    Sport = new Sport("Curling", "Winter Olympics", "Indoor")
+                    SportName = "Archery",
+                    Category = "Paralympics",
+                    Type = "Indoor"
                 },
-                new Country
+                new
                 {
-                    Name = "Jamaica",
-                    Flag = "Images/jamaica.jpg",
-                    Sport = new Sport("Bobsleigh", "Winter Olympics", "Outdoor")
+                    SportName = "Canoe Sprint",
+                    Category = "Paralympics",
+                    Type = "Outdoor"
                 },
-                new Country
+                new
                 {
-                    Name = "Italy",
-                    Flag = "Images/italy.jpg",
-                    Sport = new Sport("Bobsleigh", "Winter Olympics", "Outdoor")
+                    SportName = "Breakdancing",
+                    Category = "Youth Olympic Games",
+                    Type = "Indoor"
                 },
-                new Country
+                new
                 {
-                    Name = "Japan",
-                    Flag = "Images/japan.jpg",
-                    Sport = new Sport("Bobsleigh", "Winter Olympics", "Outdoor")
-                },
-                new Country
-                {
-                    Name = "Germany",
-                    Flag = "Images/germany.jpg",
-                    Sport = new Sport("Diving", "Summer Olympics", "Indoor")
-                },
-                new Country
-                {
-                    Name = "China",
-                    Flag = "Images/china.jpg",
-                    Sport = new Sport("Diving", "Summer Olympics", "Indoor")
-                },
-                new Country
-                {
-                    Name = "Mexico",
-                    Flag = "Images/mexico.jpg",
-                    Sport = new Sport("Bobsleigh", "Winter Olympics", "Outdoor")
-                },
-                new Country
-                {
-                    Name = "Brazil",
-                    Flag = "Images/brazil.jpg",
-                    Sport = new Sport("Road Cycling", "Summer Olympics", "Outdoor")
-                },
-                new Country
-                {
-                    Name = "Netherlands",
-                    Flag = "Images/netherlands.jpg",
-                    Sport = new Sport("Road Cycling", "Summer Olympics", "Outdoor")
-                },
-                new Country
-                {
-                    Name = "USA",
-                    Flag = "Images/united_states.jpg",
-                    Sport = new Sport("Road Cycling", "Summer Olympics", "Outdoor")
-                },
-                new Country
-                {
-                    Name = "Thailand",
-                    Flag = "Images/thailand.jpg",
-                    Sport = new Sport("Archery", "Paralympics", "Indoor")
-                },
-                new Country
-                {
-                    Name = "Uruguay",
-                    Flag = "Images/uruguay.jpg",
-                    Sport = new Sport("Archery", "Paralympics", "Indoor")
-                },
-                new Country
-                {
-                    Name = "Ukraine",
-                    Flag = "Images/ukraine.jpg",
-                    Sport = new Sport("Archery", "Paralympics", "Indoor")
-                },
-                new Country
-                {
-                    Name = "Austria",
-                    Flag = "Images/austria.jpg",
-                    Sport = new Sport("Canoe Sprint", "Paralympics", "Outdoor")
-                },
-                new Country
-                {
-                    Name = "Zimbabwe",
-                    Flag = "Images/zimbabwe.jpg",
-                    Sport = new Sport("Canoe Sprint", "Paralympics", "Outdoor")
-                },
-                new Country
-                {
-                    Name = "France",
-                    Flag = "Images/france.jpg",
-                    Sport = new Sport("Canoe Sprint", "Paralympics", "Outdoor")
-                },
-                new Country
-                {
-                    Name = "Cyprus",
-                    Flag = "Images/cyprus.jpg",
-                    Sport = new Sport("Breakdancing", "Youth Olympic Games", "Indoor")
-                },
-                new Country
-                {
-                    Name = "Russia",
-                    Flag = "Images/russia.jpg",
-                    Sport = new Sport("Breakdancing", "Youth Olympic Games", "Indoor")
-                },
-                new Country
-                {
-                    Name = "Finland",
-                    Flag = "Images/finland.jpg",
-                    Sport = new Sport("Breakdancing", "Youth Olympic Games", "Indoor")
-                },
-                new Country
-                {
-                    Name = "Slovakia",
-                    Flag = "Images/slovakia.jpg",
-                    Sport = new Sport("Skateboarding", "Youth Olympic Games", "Outdoor")
-                },
-                new Country
-                {
-                    Name = "Portugal",
-                    Flag = "Images/portugal.jpg",
-                    Sport = new Sport("Skateboarding", "Youth Olympic Games", "Outdoor")
+                    SportName = "Skateboarding",
+                    Category = "Youth Olympic Games",
+                    Type = "Outdoor"
                 }
                 );
+
+            modelBuilder.Entity<Country>().HasData(
+                new
+                {
+                    CountryId = 1,
+                    Name = "Canada",
+                    Flag = "Images/canada.jpg",
+                    SportName = "Curling"
+                },
+                new
+                {
+                    CountryId = 2,
+                    Name = "Sweden",
+                    Flag = "Images/sweden.jpg",
+                    SportName = "Curling"
+                },
+                new
+                {
+                    CountryId = 3,
+                    Name = "Great Britain",
+                    Flag = "Images/great_britain.jpg",
+                    SportName = "Curling"
+                },
+                new
+                {
+                    CountryId = 4,
+                    Name = "Jamaica",
+                    Flag = "Images/jamaica.jpg",
+                    SportName = "Bobsleigh"
+                },
+                new
+                {
+                    CountryId = 5,
+                    Name = "Italy",
+                    Flag = "Images/italy.jpg",
+                    SportName = "Bobsleigh"
+                },
+                new
+                {
+                    CountryId = 6,
+                    Name = "Japan",
+                    Flag = "Images/japan.jpg",
+                    SportName = "Bobsleigh"
+                },
+                new
+                {
+                    CountryId = 7,
+                    Name = "Germany",
+                    Flag = "Images/germany.jpg",
+                    SportName = "Diving"
+                },
+                new
+                {
+                    CountryId = 8,
+                    Name = "China",
+                    Flag = "Images/china.jpg",
+                    SportName = "Diving"
+                },
+                new
+                {
+                    CountryId = 9,
+                    Name = "Mexico",
+                    Flag = "Images/mexico.jpg",
+                    SportName = "Diving"
+                },
+                new
+                {
+                    CountryId = 10,
+                    Name = "Brazil",
+                    Flag = "Images/brazil.jpg",
+                    SportName = "Road Cycling"
+                },
+                new
+                {
+                    CountryId = 11,
+                    Name = "Netherlands",
+                    Flag = "Images/netherlands.jpg",
+                    SportName = "Road Cycling"
+                },
+                new
+                {
+                    CountryId = 12,
+                    Name = "USA",
+                    Flag = "Images/united_states.jpg",
+                    SportName = "Road Cycling"
+                },
+                new
+                {
+                    CountryId = 13,
+                    Name = "Thailand",
+                    Flag = "Images/thailand.jpg",
+                    SportName = "Archery"
+                },
+                new
+                {
+                    CountryId = 14,
+                    Name = "Uruguay",
+                    Flag = "Images/uruguay.jpg",
+                    SportName = "Archery"
+                },
+                new
+                {
+                    CountryId = 15,
+                    Name = "Ukraine",
+                    Flag = "Images/ukraine.jpg",
+                    SportName = "Archery"
+                },
+                new
+                {
+                    CountryId = 16,
+                    Name = "Austria",
+                    Flag = "Images/austria.jpg",
+                    SportName = "Canoe Sprint"
+                },
+                new
+                {
+                CountryId = 17,
+                    Name = "Pakistan",
+                    Flag = "Images/pakistan.jpg",
+                    SportName = "Canoe Sprint"
+                },
+                new
+                {
+                    CountryId = 18,
+                    Name = "Zimbabwe",
+                    Flag = "Images/zimbabwe.jpg",
+                    SportName = "Canoe Sprint"
+                },
+                new
+                {
+                    CountryId = 19,
+                    Name = "France",
+                    Flag = "Images/france.jpg",
+                    SportName = "Breakdancing"
+                },
+                new
+                {
+                    CountryId = 20,
+                    Name = "Cyprus",
+                    Flag = "Images/cyprus.jpg",
+                    SportName = "Breakdancing"
+                },
+                new
+                {
+                    CountryId = 21,
+                    Name = "Russia",
+                    Flag = "Images/russia.jpg",
+                    SportName = "Breakdancing"
+                },
+                new
+                {
+                    CountryId = 22,
+                    Name = "Finland",
+                    Flag = "Images/finland.jpg",
+                    SportName = "Skateboarding"
+                },
+                new
+                {
+                    CountryId = 23,
+                    Name = "Slovakia",
+                    Flag = "Images/slovakia.jpg",
+                    SportName = "Skateboarding"
+                },
+                new
+                {
+                    CountryId = 24,
+                    Name = "Portugal",
+                    Flag = "Images/portugal.jpg",
+                    SportName = "Skateboarding"
+                });
         }
     }
 }

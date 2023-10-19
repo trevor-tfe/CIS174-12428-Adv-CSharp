@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "OlympicsProject/1.0.0": {
         "dependencies": {
+          "Microsoft.EntityFrameworkCore": "7.0.12",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.12",
           "Microsoft.EntityFrameworkCore.Tools": "7.0.12",
           "Microsoft.Extensions.DependencyInjection": "7.0.0",
