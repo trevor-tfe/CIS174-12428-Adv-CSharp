@@ -1,7 +1,31 @@
 ﻿@*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
-
+@model IEnumerable<Team>
 @{
     ViewData["Title"] = "Olympics";
+    string Active(string filter, string selected) {
+        return (filter.ToLower() == selected.ToLower()) ? "active" : "";
+    }
 }
+<div class="row">
+    <div class="col-md-3">
+        <h3 class="mt-3">Game</h3>
+        <div class="list-group">
+            <a asp-action="Olympics"
+                asp-route-activeCategory="all"
+                asp-route-activeSport="@viewBag.ActiveSport"
+                class="list-group-item @Active("all", ViewBag.ActiveCategory)">
+                All</a>
+
+            @foreach (Sport cat in ViewBag.Sports){
+                <a asp-action="Olympics"
+                asp-route-activeCategory="@cat.Category"
+                asp-route-activeSport="@ViewBag.ActiveSport"
+                class="list-group-item @Active(cat.SportName, ViewBag.ActiveCategory)">
+                @cat.Category</a>
+            }
+        </div>
+
+    </div>
+</div>

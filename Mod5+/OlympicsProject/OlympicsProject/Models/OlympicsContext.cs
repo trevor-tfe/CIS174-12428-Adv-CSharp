@@ -11,6 +11,7 @@ namespace CIS174TrevorStewart.Models
         public OlympicsContext(DbContextOptions<OlympicsContext> options)
             : base(options)
         { }
+        public DbSet<Sport> Sports { get; set; } = null!;
         public DbSet<Country> Countries { get; set; } = null!;
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -236,7 +237,8 @@ namespace CIS174TrevorStewart.Models
                     Name = "Portugal",
                     Flag = "Images/portugal.jpg",
                     SportName = "Skateboarding"
-                });
+                }
+            );
         }
     }
 }

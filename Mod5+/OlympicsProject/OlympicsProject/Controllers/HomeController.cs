@@ -26,10 +26,26 @@ namespace CIS174TrevorStewart.Controllers
         {
             return View();
         }
-        public IActionResult Olympics()
+        public IActionResult Olympics(string activeCategory = "all", string activeSport = "all")
         {
-            var countries = context.Countries.ToList();
-            return View();
+            ViewBag.ActiveCategory = activeCategory;
+            ViewBag.ActiveSport = activeSport;
+
+            ViewBag.Sports = context.Sports.ToList();
+            ViewBag.Countries = context.Countries.ToList();
+
+            IQueryable<Country> query = context.Countries.OrderBy(t => t.Name);
+            if (activeCategory != "all")
+            {
+                query = query.Where(
+                    t => t.Sport.Category.ToLower() == activeCategory.ToLower());
+            } if (activeSport != "all")
+            {
+                query = query.Where(
+                    t => t.Sport.SportName.ToLower() == activeSport.ToLower());
+            }
+            var games = query.ToList();
+            return View(games);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
