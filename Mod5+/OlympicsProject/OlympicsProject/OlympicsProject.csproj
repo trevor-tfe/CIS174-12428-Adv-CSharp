@@ -7,6 +7,33 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="wwwroot\Images\austria.jpg" />
+    <None Include="wwwroot\Images\brazil.jpg" />
+    <None Include="wwwroot\Images\canada.jpg" />
+    <None Include="wwwroot\Images\china.jpg" />
+    <None Include="wwwroot\Images\cyprus.jpg" />
+    <None Include="wwwroot\Images\finland.jpg" />
+    <None Include="wwwroot\Images\france.jpg" />
+    <None Include="wwwroot\Images\germany.jpg" />
+    <None Include="wwwroot\Images\great_britain.jpg" />
+    <None Include="wwwroot\Images\italy.jpg" />
+    <None Include="wwwroot\Images\jamaica.jpg" />
+    <None Include="wwwroot\Images\japan.jpg" />
+    <None Include="wwwroot\Images\mexico.jpg" />
+    <None Include="wwwroot\Images\netherlands.jpg" />
+    <None Include="wwwroot\Images\pakistan.jpg" />
+    <None Include="wwwroot\Images\portugal.jpg" />
+    <None Include="wwwroot\Images\russia.jpg" />
+    <None Include="wwwroot\Images\slovakia.jpg" />
+    <None Include="wwwroot\Images\sweden.jpg" />
+    <None Include="wwwroot\Images\thailand.jpg" />
+    <None Include="wwwroot\Images\ukraine.jpg" />
+    <None Include="wwwroot\Images\united_states.jpg" />
+    <None Include="wwwroot\Images\uruguay.jpg" />
+    <None Include="wwwroot\Images\zimbabwe.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.12" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.12" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.12">

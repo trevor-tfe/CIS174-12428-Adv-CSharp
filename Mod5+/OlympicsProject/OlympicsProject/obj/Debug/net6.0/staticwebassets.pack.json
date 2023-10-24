@@ -5,6 +5,102 @@
       "PackagePath": "staticwebassets\\OlympicsProject.bundle.scp.css"
     },
     {
+      "Id": "E:\\DMACC\\Adv C#\\CIS174-12428-Adv-CSharp\\Mod5+\\OlympicsProject\\OlympicsProject\\wwwroot\\Images\\austria.jpg",
+      "PackagePath": "staticwebassets\\Images\\austria.jpg"
+    },
+    {
+      "Id": "E:\\DMACC\\Adv C#\\CIS174-12428-Adv-CSharp\\Mod5+\\OlympicsProject\\OlympicsProject\\wwwroot\\Images\\brazil.jpg",
+      "PackagePath": "staticwebassets\\Images\\brazil.jpg"
+    },
+    {
+      "Id": "E:\\DMACC\\Adv C#\\CIS174-12428-Adv-CSharp\\Mod5+\\OlympicsProject\\OlympicsProject\\wwwroot\\Images\\canada.jpg",
+      "PackagePath": "staticwebassets\\Images\\canada.jpg"
+    },
+    {
+      "Id": "E:\\DMACC\\Adv C#\\CIS174-12428-Adv-CSharp\\Mod5+\\OlympicsProject\\OlympicsProject\\wwwroot\\Images\\china.jpg",
+      "PackagePath": "staticwebassets\\Images\\china.jpg"
+    },
+    {
+      "Id": "E:\\DMACC\\Adv C#\\CIS174-12428-Adv-CSharp\\Mod5+\\OlympicsProject\\OlympicsProject\\wwwroot\\Images\\cyprus.jpg",
+      "PackagePath": "staticwebassets\\Images\\cyprus.jpg"
+    },
+    {
+      "Id": "E:\\DMACC\\Adv C#\\CIS174-12428-Adv-CSharp\\Mod5+\\OlympicsProject\\OlympicsProject\\wwwroot\\Images\\finland.jpg",
+      "PackagePath": "staticwebassets\\Images\\finland.jpg"
+    },
+    {
+      "Id": "E:\\DMACC\\Adv C#\\CIS174-12428-Adv-CSharp\\Mod5+\\OlympicsProject\\OlympicsProject\\wwwroot\\Images\\france.jpg",
+      "PackagePath": "staticwebassets\\Images\\france.jpg"
+    },
+    {
+      "Id": "E:\\DMACC\\Adv C#\\CIS174-12428-Adv-CSharp\\Mod5+\\OlympicsProject\\OlympicsProject\\wwwroot\\Images\\germany.jpg",
+      "PackagePath": "staticwebassets\\Images\\germany.jpg"
+    },
+    {
+      "Id": "E:\\DMACC\\Adv C#\\CIS174-12428-Adv-CSharp\\Mod5+\\OlympicsProject\\OlympicsProject\\wwwroot\\Images\\great_britain.jpg",
+      "PackagePath": "staticwebassets\\Images\\great_britain.jpg"
+    },
+    {
+      "Id": "E:\\DMACC\\Adv C#\\CIS174-12428-Adv-CSharp\\Mod5+\\OlympicsProject\\OlympicsProject\\wwwroot\\Images\\italy.jpg",
+      "PackagePath": "staticwebassets\\Images\\italy.jpg"
+    },
+    {
+      "Id": "E:\\DMACC\\Adv C#\\CIS174-12428-Adv-CSharp\\Mod5+\\OlympicsProject\\OlympicsProject\\wwwroot\\Images\\jamaica.jpg",
+      "PackagePath": "staticwebassets\\Images\\jamaica.jpg"
+    },
+    {
+      "Id": "E:\\DMACC\\Adv C#\\CIS174-12428-Adv-CSharp\\Mod5+\\OlympicsProject\\OlympicsProject\\wwwroot\\Images\\japan.jpg",
+      "PackagePath": "staticwebassets\\Images\\japan.jpg"
+    },
+    {
+      "Id": "E:\\DMACC\\Adv C#\\CIS174-12428-Adv-CSharp\\Mod5+\\OlympicsProject\\OlympicsProject\\wwwroot\\Images\\mexico.jpg",
+      "PackagePath": "staticwebassets\\Images\\mexico.jpg"
+    },
+    {
+      "Id": "E:\\DMACC\\Adv C#\\CIS174-12428-Adv-CSharp\\Mod5+\\OlympicsProject\\OlympicsProject\\wwwroot\\Images\\netherlands.jpg",
+      "PackagePath": "staticwebassets\\Images\\netherlands.jpg"
+    },
+    {
+      "Id": "E:\\DMACC\\Adv C#\\CIS174-12428-Adv-CSharp\\Mod5+\\OlympicsProject\\OlympicsProject\\wwwroot\\Images\\pakistan.jpg",
+      "PackagePath": "staticwebassets\\Images\\pakistan.jpg"
+    },
+    {
+      "Id": "E:\\DMACC\\Adv C#\\CIS174-12428-Adv-CSharp\\Mod5+\\OlympicsProject\\OlympicsProject\\wwwroot\\Images\\portugal.jpg",
+      "PackagePath": "staticwebassets\\Images\\portugal.jpg"
+    },
+    {
+      "Id": "E:\\DMACC\\Adv C#\\CIS174-12428-Adv-CSharp\\Mod5+\\OlympicsProject\\OlympicsProject\\wwwroot\\Images\\russia.jpg",
+      "PackagePath": "staticwebassets\\Images\\russia.jpg"
+    },
+    {
+      "Id": "E:\\DMACC\\Adv C#\\CIS174-12428-Adv-CSharp\\Mod5+\\OlympicsProject\\OlympicsProject\\wwwroot\\Images\\slovakia.jpg",
+      "PackagePath": "staticwebassets\\Images\\slovakia.jpg"
+    },
+    {
+      "Id": "E:\\DMACC\\Adv C#\\CIS174-12428-Adv-CSharp\\Mod5+\\OlympicsProject\\OlympicsProject\\wwwroot\\Images\\sweden.jpg",
+      "PackagePath": "staticwebassets\\Images\\sweden.jpg"
+    },
+    {
+      "Id": "E:\\DMACC\\Adv C#\\CIS174-12428-Adv-CSharp\\Mod5+\\OlympicsProject\\OlympicsProject\\wwwroot\\Images\\thailand.jpg",
+      "PackagePath": "staticwebassets\\Images\\thailand.jpg"
+    },
+    {
+      "Id": "E:\\DMACC\\Adv C#\\CIS174-12428-Adv-CSharp\\Mod5+\\OlympicsProject\\OlympicsProject\\wwwroot\\Images\\ukraine.jpg",
+      "PackagePath": "staticwebassets\\Images\\ukraine.jpg"
+    },
+    {
+      "Id": "E:\\DMACC\\Adv C#\\CIS174-12428-Adv-CSharp\\Mod5+\\OlympicsProject\\OlympicsProject\\wwwroot\\Images\\united_states.jpg",
+      "PackagePath": "staticwebassets\\Images\\united_states.jpg"
+    },
+    {
+      "Id": "E:\\DMACC\\Adv C#\\CIS174-12428-Adv-CSharp\\Mod5+\\OlympicsProject\\OlympicsProject\\wwwroot\\Images\\uruguay.jpg",
+      "PackagePath": "staticwebassets\\Images\\uruguay.jpg"
+    },
+    {
+      "Id": "E:\\DMACC\\Adv C#\\CIS174-12428-Adv-CSharp\\Mod5+\\OlympicsProject\\OlympicsProject\\wwwroot\\Images\\zimbabwe.jpg",
+      "PackagePath": "staticwebassets\\Images\\zimbabwe.jpg"
+    },
+    {
       "Id": "E:\\DMACC\\Adv C#\\CIS174-12428-Adv-CSharp\\Mod5+\\OlympicsProject\\OlympicsProject\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
