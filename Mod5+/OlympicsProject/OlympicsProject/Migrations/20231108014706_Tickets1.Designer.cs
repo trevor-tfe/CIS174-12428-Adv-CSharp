@@ -4,6 +4,7 @@ using CIS174TrevorStewart.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace OlympicsProject.Migrations
 {
     [DbContext(typeof(OlympicsContext))]
-    partial class OlympicsContextModelSnapshot : ModelSnapshot
+    [Migration("20231108014706_Tickets1")]
+    partial class Tickets1
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -357,17 +360,6 @@ namespace OlympicsProject.Migrations
                     b.HasKey("TicketID");
 
                     b.ToTable("Tickets");
-
-                    b.HasData(
-                        new
-                        {
-                            TicketID = 1,
-                            Description = "Finish Homework",
-                            PointValue = 1,
-                            SprintNumber = 1,
-                            Status = "Quality Assurance",
-                            TicketName = "Homework"
-                        });
                 });
 
             modelBuilder.Entity("CIS174TrevorStewart.Models.ToDo", b =>

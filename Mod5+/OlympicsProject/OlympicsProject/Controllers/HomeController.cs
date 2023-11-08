@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Diagnostics;
+using System.Threading.Tasks;
 
 namespace CIS174TrevorStewart.Controllers
 {
@@ -76,7 +77,7 @@ namespace CIS174TrevorStewart.Controllers
                 else if (filters.IsToday) { query = query.Where(t => t.DueDate == today); }
             }
             var tasks = query.OrderBy(t => t.DueDate).ToList();
-            return View(tasks); 
+            return View(tasks);
         }
 
         [HttpGet]
@@ -134,6 +135,42 @@ namespace CIS174TrevorStewart.Controllers
             }
             context.SaveChanges();
             return RedirectToAction("ToDo", new { ID = id });
+        }
+
+        public IActionResult Ticket(string id)
+        {
+            var filters = new TicketFilters(id);
+            ViewBag.Filters = filters;
+            ViewBag.Tickets = context.Tickets.ToList();
+            ViewBag.StatusFilterValues = TicketFilters.StatusFilterValues;
+
+            IQueryable<Ticket> query = context.Tickets
+                .Include(t => t.PointValue).Include(t => t.Status);
+            if (filters.HasPointValue)
+            {
+                query = query.Where(t => t.PointValue > Int32.Parse(filters.PointValues));
+            }
+            if (filters.HasStatus)
+            {
+                query = query.Where(t => t.Status == filters.Status);
+            }
+            var tasks = query.OrderBy(t => t.TicketID).ToList();
+            return View(tasks);
+        }
+
+        public IActionResult TicketAdd(Ticket ticket)
+        {
+            if (ModelState.IsValid)
+            {
+                context.Tickets.Add(ticket);
+                context.SaveChanges();
+                return RedirectToAction("Ticket");
+            }
+            else
+            {
+                ViewBag.StatusFilterValues = TicketFilters.StatusFilterValues;
+                return View(ticket);
+            }
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

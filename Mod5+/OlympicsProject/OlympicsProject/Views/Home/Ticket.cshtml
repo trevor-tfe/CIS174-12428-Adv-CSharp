@@ -1,0 +1,65 @@
+﻿
+@model IEnumerable<Ticket>
+@{
+
+}
+<div class="row">
+    <div class="col-md-2">
+        <form asp-action="Filter" method="post">
+            <div class="mb-3">
+                <label class="form-label">Category</label>
+                <select name="filter" class="form-select" asp-items="@(new SelectList(ViewBag.Categories, "CategoryId", "CategoryName", ViewBag.Filters.CategoryId))">
+                <option value="all">All</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Due:</label>
+                <select name="filter" class="form-select" asp-items="@(new SelectList(ViewBag.DueFilters, "Key", "Value", ViewBag.Filters.Due))">
+                <option value="all">All</option></select>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Status:</label>
+                <select name="filter" class="form-select" asp-items="@(new SelectList(ViewBag.StatusFilterValues, "StatusId", "StatusName", ViewBag.Filters.StatusId))">
+                <option value="all">All</option></select>
+            </div>
+            <button type="submit" class="btn btn-primary">Filter</button>
+            <a asp-action="Ticket" asp-route-id="" class="btn btn-primary">Clear</a>
+        </form>
+    </div>
+    <div class="col-md-10">
+        <form asp-action="MarkComplete" method="post" asp-route-id="@ViewBag.Filters.FilterString">
+            <table class="table table-bordered table-striped mt-2">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Category</th>
+                        <th>Sprint Number</th>
+                        <th>Status</th>
+                        <th class="w-25"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (Ticket task in Model){
+                        <tr>
+                            <td>@task.TicketName</td>
+                            <td>@task.Description</td>
+                            <td>@task.SprintNumber</td>
+                            <td>@task.PointValue</td>
+                            <td>@task.Status</td>
+                            <td>@if (@task.Status == "Quality Assurance" || @task.Status == "In Progress" || @task.Status == "To Do" )
+                                {
+                                    <button type="submit" class="btn btn-primary btn-sm" name="@nameof(Ticket.TicketID)" value="@task.TicketID">Mark Completed</button>
+                                }
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </form>
+        <form asp-action="DeleteTickets" method="post" asp-route-id="@ViewBag.Filters.FilterString">
+            <a asp-action="TicketAdd" class="btn btn-primary">Add new task</a>
+            <button type="submit" class="btn btn-primary">Delete compelted tasks</button>
+        </form>
+    </div>
+</div>

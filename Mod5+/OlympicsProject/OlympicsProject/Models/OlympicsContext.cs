@@ -22,9 +22,23 @@ namespace CIS174TrevorStewart.Models
         public DbSet<ToDoStatus> ToDoStatuses { get; set; } = null!;
         public DbSet<ToDo> ToDos { get; set; } = null!;
 
+        //TICKET SECTION
+        public DbSet<Ticket> Tickets { get; set; } = null!;
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+
+            //TICKET SECTION
+            modelBuilder.Entity<Ticket>().HasData(
+                new Ticket { 
+                    TicketID = 1,
+                    TicketName = "Homework",
+                    Description = "Finish Homework",
+                    SprintNumber = 1,
+                    PointValue = 1,
+                    Status = "Quality Assurance"
+                });
 
             //TODO SECTION
             modelBuilder.Entity<ToDoCategory>().HasData(
