@@ -4,9 +4,10 @@ using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
 
 namespace CIS174TrevorStewart.Models
 {
-    public class Ticket
+    public class Ticket : ITicket
     {
-        public Ticket() {
+        public Ticket()
+        {
             ValidStatus.Add("To Do");
             ValidStatus.Add("In Progress");
             ValidStatus.Add("Quality Assurance");
@@ -27,6 +28,7 @@ namespace CIS174TrevorStewart.Models
         public int SprintNumber { get; set; }
 
         [Required]
+        [Range(1, 10, ErrorMessage = "Value must be betwen 1 and 10.")]
         public int PointValue { get; set; }
 
         [Required]
